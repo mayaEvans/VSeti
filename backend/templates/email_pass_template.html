@@ -1,0 +1,6 @@
+{% autoescape off %}
+Уважаемый(ая) {{ fullname }}!
+Для изменения своего пароля на платформе "ВСЕТИ" перейдите по ссылке:
+http://{{ domain }}{% url 'reset' uidb64=uid token=token %}
+
+{% endautoescape %}
